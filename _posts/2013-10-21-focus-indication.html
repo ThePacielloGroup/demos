@@ -1,0 +1,62 @@
+---
+layout: article
+title: Focus Indication
+tags:
+ - focus
+ - contrast
+extra-style:
+ - focus-indication-reset
+ - focus-indication 
+wcags:
+ - 2.4.7 Focus Visible
+ - 1.4.3 Contrast (Minimum)
+urls:
+ - http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html
+ - http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html
+---
+
+<p>In terms of WCAG AA, there is no prescribed contrast ratio for buttons, however there is a requirement for the focus indication to be 'visible'.  We recommend the following.</p>
+
+<ul>
+	<li>A consistent indication across all focusable elements, including at least an outline style.</li>
+	<li>Outline must be at least 2px thick.</li>
+	<li>Outline must have 3:1 colour contrast against focused element, Or have an outline-offset gap between focused element of at least 1px.</li>
+	<li>Outline must have 3:1 contrast between whatever background it's placed on.</li>
+</ul>
+
+<p>It is important to bear in mind that browsers' default focus indication is often insufficient because it is either too weak to contrast against the background (bear in mind that a dashed outline has significantly less contrast than a solid one).</p>
+
+<p>Also, if you are relying on subtle changes of colour to indicate changes in state for buttons, these may not be visible on certain types of display or in certain environmental/lighting conditions, so either making the colour change more striking, or having an additional (e.g. outline) focus indicator can be of great help.</p>
+
+<p>Please note that any changes to elements that are applied on hover <a href="/articles/hover-and-focus-as-equals">should also be applied on focus</a>.</p>
+
+<h2>Examples</h2>
+
+<dl>
+	<dt>Button</dt>
+	<dd>
+		<p>
+			<button>Hello</button>
+		</p>
+	</dd>
+
+	<dt>Input of type <code>button</code></dt>
+	<dd>
+		<p>
+			<input type="button" value="Hello"/>
+		</p>
+	</dd>
+
+	<dt>Link with a role of <code>button</code></dt>
+	<dd>
+		<p>
+			<a href="#" role="button">Hello</a>
+		</p>
+	</dd>
+</dl>
+
+<h2>Code</h2>
+
+<ul>
+	<li><p><a href="/style/focus-indication.css">CSS</a></p></li>
+</ul>
