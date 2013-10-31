@@ -1,6 +1,8 @@
 ---
 layout: base
+title: The Paciello Group HTML Demos
 ---
+{% include path %}
 <section>
 	<header>
 		<h1>The Paciello Group HTML Demos</h1>
@@ -11,7 +13,7 @@ layout: base
 	<h2>Articles</h2>
 	<ul>
 	{% for post in site.posts %}
-		<li>{{ post.date | date: "%Y-%m-%d" }}: <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.tags | array_to_sentence_string }})</li>
+		<li>{{ post.date | date: "%Y-%m-%d" }}: <a href="{{ BASE }}{{ post.url }}">{{ post.title }}</a> ({{ post.tags | array_to_sentence_string }})</li>
 	{% endfor %}
 	</ul>
 </section>

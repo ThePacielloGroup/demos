@@ -1,0 +1,5 @@
+{% if site.safe %}
+	{% assign BASE = "http://thepaciellogroup.github.io/HTML-demos" %}
+{% else %}
+	{% assign BASE = nil %}
+{% endif %}

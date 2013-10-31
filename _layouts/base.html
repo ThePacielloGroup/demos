@@ -1,12 +1,13 @@
+{% include path %}
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ page.title }}</title>
-		<link rel="alternate" type="application/rss+xml" title="Atom Feed" href="http://thepaciellogroup.github.io/HTML-demos/atom.xml"/>
-		<link rel="stylesheet" type="text/css" href="http://thepaciellogroup.github.io/HTML-demos/style/site.css"/>
+		<link rel="alternate" type="application/rss+xml" title="Atom Feed" href="{{ BASE }}/atom.xml"/>
+		<link rel="stylesheet" type="text/css" href="{{ BASE }}/style/site.css"/>
 		{% for css in page.extra-style %}
-		<link rel="stylesheet" type="text/css" href="http://thepaciellogroup.github.io/HTML-demos/style/{{ css }}.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ BASE }}/style/{{ css }}.css"/>
 		{% endfor %}
 		<meta name="author" content="The Paciello Group"/>
 		<meta name="description" content="Accessible HTML Demos"/>
@@ -18,8 +19,8 @@
 	<body>
 		<nav role="navigation">
 			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/articles/">Articles</a></li>
+				<li><a href="{{ BASE }}/">Home</a></li>
+				<li><a href="{{ BASE }}/articles/">Articles</a></li>
 			</ul>
 		</nav>
 		<main role="main">
