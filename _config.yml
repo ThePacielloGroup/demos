@@ -1,0 +1,10 @@
+permalink: /articles/:title/
+
+# GitHub defaults
+#safe: true
+lsi: false
+pygments: true
+
+# Use 'safe' flag as a production/local-dev flag
+# (idea from Jekyll Bootstrap)
+safe: false

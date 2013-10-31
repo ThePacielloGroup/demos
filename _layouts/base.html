@@ -1,0 +1,36 @@
+{% include path %}
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }}</title>
+		<link rel="alternate" type="application/rss+xml" title="Atom Feed" href="{{ BASE }}/atom.xml"/>
+		<link rel="stylesheet" type="text/css" href="{{ BASE }}/style/site.css"/>
+		{% for css in page.extra-style %}
+		<link rel="stylesheet" type="text/css" href="{{ BASE }}/style/{{ css }}.css"/>
+		{% endfor %}
+		<meta name="author" content="The Paciello Group"/>
+		<meta name="description" content="Accessible HTML Demos"/>
+		<meta name="keywords" content="accessibility,web"/>
+		{% for js in page.external-script %}
+		<script type="text/javascript" src="{{ js }}"></script>
+		{% endfor %}
+		{% for js in page.extra-script %}
+		<script type="text/javascript" src="{{ BASE }}/script/{{ js }}"></script>
+		{% endfor %}
+	</head>
+	<body>
+		<nav role="navigation">
+			<ul>
+				<li><a href="{{ BASE }}/">Home</a></li>
+				<li><a href="{{ BASE }}/articles/">Articles</a></li>
+			</ul>
+		</nav>
+		<main role="main">
+{{ content }}
+		</main>
+		<footer>
+			<p>Copyright 2013 The Paciello Group</p>
+		</footer>
+	</body>
+</html>

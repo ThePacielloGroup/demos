@@ -1,0 +1,118 @@
+body {
+	width: 45em;
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 5%;
+	background-color: white;
+	color: #555;
+	font-family: Verdana, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+
+
+input, button {
+	font-size: inherit;
+}
+
+
+nav ul {
+	list-style-type: none;
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	border-bottom: 1px solid #555;
+}
+nav li {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+nav a {
+	display: block;
+	padding: 1.5em;
+}
+
+
+header {
+	clear: both;
+	padding-top: 0.1em;
+}
+
+
+footer {
+	padding-top: 0.5em;
+	font-size: 0.8em;
+	clear: both;
+	border-top: 1px solid #555;
+}
+
+
+h1 {
+	font-size: 2em;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2em;
+}
+
+
+a {
+	color: green;
+	transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	-webkit-transition: 0.25s;
+}
+a:focus, a:hover {
+	background-color: #555;
+	color: white;
+}
+
+
+.hidden {
+	/* <http://yaccessibilityblog.com/library/css-clip-hidden-content.html> */
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);  /* can put in commas when IE6, IE7 go away */
+	/* Remove the following when browsers work... */
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+
+dl.article-meta dt, dl.article-meta dd {
+	display: inline;
+	margin: 0;
+}
+dl.article-meta dt:not(:first-child):before {
+	content: "\A";
+	white-space: pre;
+}
+dl.article-meta dt:after {
+	content: ":";
+}
+dl.article-meta ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+#tag-cloud {
+	line-height: 2.5em;  /* a little cosy, with the largest font size of 4em */
+	margin: 0
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+#tag-cloud a {
+	text-decoration: none;
+}

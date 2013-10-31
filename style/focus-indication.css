@@ -1,0 +1,6 @@
+button:focus, button:hover,
+a[role=button]:focus, a[role=button]:hover,
+input:focus, input:hover {
+	outline: 2px solid #005;
+	outline-offset: 2px;
+}

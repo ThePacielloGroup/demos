@@ -1,0 +1,8 @@
+a[role=button] {
+	text-decoration: none;
+}
+
+a[role=button]:focus, a[role=button]:hover {
+	background-color: inherit;
+	color: inherit;
+}
