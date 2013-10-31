@@ -12,7 +12,7 @@ script:
 	<dd>
 		<ul id="list-{{ cur_tag }}">
 			{% for post in site.tags.[cur_tag] %}
-			<li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d"}})</li>
+			<li><a href="{{ BASE }}{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d"}})</li>
 			{% endfor %}
 		</ul>
 	</dd>
