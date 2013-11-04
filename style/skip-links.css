@@ -1,0 +1,50 @@
+#content {
+    position: relative;
+    border-top: 1px solid #555555;
+    margin-top: 2em;
+}
+
+#skip2 { opacity: 0; }
+#skip2:focus { opacity: 100; }
+
+#skip3 { opacity: 0; }
+#skip3.visible { opacity: 100; }
+
+@keyframes arrow {
+    from { left: -100px; }
+    to { left: -150px; }
+}
+
+#arrow {
+    display: none;
+    position: absolute;
+    left: -100px;
+    top: -40px;
+    
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    /* Firefox: */
+    -moz-animation-name: arrow;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-delay: 0;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -moz-animation-play-state: running;
+    /* Safari and Chrome: */
+    -webkit-animation-name: arrow;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+#arrow.visible {
+    display: block;
+}
