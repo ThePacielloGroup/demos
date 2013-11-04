@@ -1,13 +1,15 @@
-// Lien d'évitement > Persistence de l'affichage
-jQuery(document).ready(function($) {
-    $("a#skip3").focus(function(){
-        $(this).addClass('visible');
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    var skip3 = document.querySelector("a#skip3")
+    skip3.onfocus = function() {
+        skip3.classList.add('visible');
+    }
     
-    $("a#skip4").focus(function(){
-        $("#arrow").addClass('visible');
-    }).blur(function(){
-        $("#arrow").removeClass('visible');
-    });
-
-}); 
+    var skip4 = document.querySelector("a#skip4")
+    var arrow = document.querySelector("#arrow")
+    skip4.onfocus = function() {
+        arrow.classList.add('visible');
+    }
+    skip4.onblur = function() {
+        arrow.classList.remove('visible');
+    }
+});
