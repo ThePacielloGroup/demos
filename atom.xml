@@ -3,7 +3,7 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- <title>The Paciello Group HTML Demos</title>
+ <title>The Paciello Group HTML & ARIA Demos</title>
  <link href="http://thepaciellogroup.github.io/html-demos/atom.xml" rel="self"/>
  <link href="http://thepaciellogroup.github.io/html-demos/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
