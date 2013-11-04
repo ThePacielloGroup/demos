@@ -1,0 +1,28 @@
+---
+layout: article
+title: Skin Navigation Links
+tags:
+ - skiplinks
+ - navigation
+extra-style:
+ - skip-links
+extra-script:
+ - jquery.min.js
+ - skip-links.js
+wcags:
+ - 2.4.1 Bypass Blocks
+urls:
+ - http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html
+---
+{% include path %}
+
+<h2>Always Visible</h2>
+<a id="skip1" href="#content">Go to content</a>
+<h2>Hidden</h2>
+<a id="skip2" href="#content">Go to content</a>
+<h2>Visible after first focus</h2>
+<a id="skip3" href="#content">Go to content</a>
+<h2>With target indicator</h2>
+<a id="skip4" href="#content">Go to content</a>
+
+<p id="content"><img id="arrow" alt="" src="{{ BASE }}/images/right_arrow.png" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel commodo felis. Curabitur ornare sed sapien sed semper. Cras molestie et diam nec mattis. Vivamus porttitor convallis lorem sed rutrum. Pellentesque dictum consectetur luctus. Suspendisse a turpis risus. Curabitur volutpat gravida libero eget mollis. Integer eu nibh cursus, convallis nisi a, posuere neque. Aliquam id dui aliquet, hendrerit erat non, ornare mi.</p>
